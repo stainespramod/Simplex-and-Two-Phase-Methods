@@ -42,3 +42,13 @@ CMakePresets.json.user
 cmake_install.cmake
 Makefile
 targets.cmake
+
+# Build folders
+build/
+bin/
+obj/
+out/
+Debug/
+Release/
+x64/
+cmake-build-*/
