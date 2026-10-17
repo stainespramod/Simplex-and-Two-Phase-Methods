@@ -30,3 +30,15 @@
 *.exe
 *.out
 *.app
+
+# macOS Debug Symbols & System files
+*.dSYM/
+.DS_Store
+
+# CMake build systems
+CMakeCache.txt
+CMakeFiles/
+CMakePresets.json.user
+cmake_install.cmake
+Makefile
+targets.cmake
