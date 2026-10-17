@@ -1,0 +1,10 @@
+Maximum achievable value = 11
+The values of the basic variables are:
+y1 : 4 y2 : 5 y6 : 11 
+
+Final tableau:
+cB        yB        xB       y1       y2       y3       y4       y5       y6       
+-1.00      y1     4.00     1.00     0.00     0.80     0.40     0.10     0.00     
+3.00      y2     5.00     0.00     1.00     0.40     0.20     0.30     0.00     
+0.00      y6     11.00     0.00     0.00     10.00     1.00     -0.50     1.00     
+          z      11.00     0.00     0.00     2.40     0.20     0.80     0.00     
