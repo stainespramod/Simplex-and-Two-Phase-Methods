@@ -226,8 +226,8 @@ void matrix_build(ifstream &inputFile,vector<vector<long double>> &A, vector<lon
 }
 
 int main(){
-    ifstream inputFile("input_twophase.txt");
-    ofstream outputFile("output_twophase.txt");
+    ifstream inputFile("input-output/input_twophase.txt");
+    ofstream outputFile("input-output/output_twophase.txt");
     int m,n_art,n_max,z1_max=0;
     inputFile>>n_max>>n_art;
     vector<long double> z(n_max-n_art),z1(n_max);

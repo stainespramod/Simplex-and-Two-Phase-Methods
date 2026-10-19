@@ -155,8 +155,8 @@ void matrix_build(ifstream &inputFile,vector<vector<long double>> &A, vector<lon
 }
 
 int main(){
-    ifstream inputFile("input_simplex3.txt");
-    ofstream outputFile("output_simplex3.txt");
+    ifstream inputFile("input-output/input_simplex1.txt");
+    ofstream outputFile("input-output/output_simplex1.txt");
     int m,n_max;
     inputFile>>n_max;
     vector<long double> z(n_max);
