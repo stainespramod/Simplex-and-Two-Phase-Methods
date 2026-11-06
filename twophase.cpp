@@ -36,7 +36,7 @@ void print_tableau(ofstream &outputFile,vector<vector<long double>> &A,vector<lo
     outputFile<<"\n";
 }
 
-void alternative_optima(ofstream &outputFile,vector<vector<long double>> &A, vector<long double> &xB,vector<long double> &redcost, int m, int n, int z_max, vector<long double> &yB, int pivot_column){
+void alternative_optima(ofstream &outputFile,vector<vector<long double>> &A, vector<long double> &xB,vector<long double> &redcost, int m, int n, long double z_max, vector<long double> &yB, int pivot_column){
     vector<long double> minratio_test=xB,sol1_yB=yB,sol1_xB=xB;
     long double min_ratio=INT_MAX,min_redcost=*min_element(redcost.begin(),redcost.end());
     int pivot_row;
@@ -72,7 +72,7 @@ void unbounded_case(ofstream &outputFile){
     outputFile<<"This is a case of unbounded solution\n\n";
 }
 
-void base_case(ofstream &outputFile, vector<vector<long double>> &A, vector<long double> &xB,vector<long double> &redcost, int m, int n, int z_max, vector<long double> &yB, vector<long double> &z){
+void base_case(ofstream &outputFile, vector<vector<long double>> &A, vector<long double> &xB,vector<long double> &redcost, int m, int n, long double z_max, vector<long double> &yB, vector<long double> &z){
     vector<long double> minratio_test=xB;
     long double min_ratio=INT_MAX,min_redcost=*min_element(redcost.begin(),redcost.end());
     int pivot_row,pivot_column;
